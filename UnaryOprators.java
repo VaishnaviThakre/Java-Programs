@@ -1,20 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Scanner;
 
-/**
- *
- * @author dell
- */
 public class UnaryOprators {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Initial value of a: " + a);
+        System.out.println("Unary Plus: " + (+a));
+        System.out.println("Unary Minus: " + (-a));
+        System.out.println("Pre-increment: " + (++a));
+        System.out.println("Post-increment: " + (a++));
+        System.out.println("Final value of a: " + a);
+        System.out.println("Pre-decrement: " + (--a));
+        System.out.println("Post-decrement: " + (a--));
+        System.out.println("Final value of a: " + a);
+        System.out.println("Logical Complement: " + (!true));
+        System.out.println("Bitwise Complement: " + (~a));
     }
-    
 }
